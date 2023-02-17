@@ -1,6 +1,9 @@
-<<<<<<< HEAD
+
 chuchu
-=======
 testando log
 dos arquivos
->>>>>>> 281d716a06d2ec8005ad1f25cead90b8e30b82a6
+
+Macacos me mordam
+
+
+
