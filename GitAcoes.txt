@@ -29,5 +29,8 @@ git stash joga o codigo da branch no lixo.
 git stash list mostra todas as stash 
 git stash apply + posição do arquivo, recupera a stash
 git stash show -p + <numero> mostra as mudanças feitas.
+git tag -a + <Nome>  + msn
+A tag é diferente do stash, serve como um checkpoint.
+Serve para salvar o codigo.
+Ultilizadas para demarcar estágios de desenvolvimento.
 
- 
