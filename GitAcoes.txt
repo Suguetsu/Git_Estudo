@@ -29,8 +29,27 @@ git stash joga o codigo da branch no lixo.
 git stash list mostra todas as stash 
 git stash apply + posição do arquivo, recupera a stash
 git stash show -p + <numero> mostra as mudanças feitas.
+
+
 git tag -a + <Nome>  + msn
 A tag é diferente do stash, serve como um checkpoint.
 Serve para salvar o codigo.
+git tag show + tag, mostra as alterações feitas
+git tag checkout + tag, muda para a tag.
+
 Ultilizadas para demarcar estágios de desenvolvimento.
+
+git fetch -a, recebe todas as branchs.
+
+Submódulos é a maneira de possuir dois ou mais projetos em um só repositório.
+
+git submodule add <repo> + adiciona um submodulo
+git submodule, mostra os submoduloos criados.
+
+
+git remote -v verifica quais as origens do repositório
+git remote rm origin, remove as origens/links do repositorio online
+git remote add origin + link, adiciona um novo repositorio remoto.
+
+
 
