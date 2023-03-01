@@ -1,0 +1,55 @@
+
+Nunca criar uma branch a partir de outra que não seja a master..
+
+Ao mudar de branch sem commitar os arquivos da branch anterior 
+passam pra branch atual, se o commit for feito as mudanças se 
+misturam com a branch atual.
+
+SEMPRE COMMITAR ANTES DE MUDAR DE BRANCH
+
+Antes de criar uma nova branch, de um pull para atualizar o projeto.
+
+Para atualizar a branch pode-se dar um merge atraves do branch
+atual com a master, para atulizar o branch que se está trabalhando, 
+nunca faça isso a partir da master e sim do seu branch. Isso se sua branch 
+estiver muito atrasada; Isso se o projeto for seu, se não quem deve
+fazer isso é a empresa, ou dev superior.
+
+
+
+git mv => comando para renomear arquivo
+git rm => comando para remover arquivo
+git branch => visualiza as branchs ativas
+gti branch -d + <nomeBranch>  => Deleta a branch
+git checkout -b + <nomeNovaBranch> => Cria uma nova branch e muda pra ela.
+git branch + <nomeNovaBranch> Cria uma nova branch mas não muda pra ela.
+git merge + <nomeBranch> Une as alterações da branch na master,
+isso deve ser feito a partir da master.
+git stash joga o codigo da branch no lixo.
+git stash list mostra todas as stash 
+git stash apply + posição do arquivo, recupera a stash
+git stash show -p + <numero> mostra as mudanças feitas.
+
+
+git tag -a + <Nome>  + msn
+A tag é diferente do stash, serve como um checkpoint.
+Serve para salvar o codigo.
+git tag show + tag, mostra as alterações feitas
+git tag checkout + tag, muda para a tag.
+
+Ultilizadas para demarcar estágios de desenvolvimento.
+
+git fetch -a, recebe todas as branchs.
+
+Submódulos é a maneira de possuir dois ou mais projetos em um só repositório.
+
+git submodule add <repo> + adiciona um submodulo
+git submodule, mostra os submoduloos criados.
+
+
+git remote -v verifica quais as origens do repositório
+git remote rm origin, remove as origens/links do repositorio online
+git remote add origin + link, adiciona um novo repositorio remoto.
+
+
+
