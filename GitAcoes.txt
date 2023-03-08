@@ -15,7 +15,8 @@ nunca faça isso a partir da master e sim do seu branch. Isso se sua branch
 estiver muito atrasada; Isso se o projeto for seu, se não quem deve
 fazer isso é a empresa, ou dev superior.
 
-
+cd + nome da pasta, muda o terminal do git para dentro da pasta.
+cd + .. Volta para a pasta raiz do projeto.
 
 git mv => comando para renomear arquivo
 git rm => comando para remover arquivo
@@ -41,15 +42,44 @@ Ultilizadas para demarcar estágios de desenvolvimento.
 
 git fetch -a, recebe todas as branchs.
 
+
+Submódulos. 
+
 Submódulos é a maneira de possuir dois ou mais projetos em um só repositório.
 
 git submodule add <repo> + adiciona um submodulo
 git submodule, mostra os submoduloos criados.
+git commit para colocar no stage e
+git push --recurse-submodules=on-demand,
+ para enviar os arquivos para o submodulo.
 
+
+Link repositório.
 
 git remote -v verifica quais as origens do repositório
 git remote rm origin, remove as origens/links do repositorio online
 git remote add origin + link, adiciona um novo repositorio remoto.
 
+
+Análise e inspeção.
+git diff HEAD: NuvemArquivo x LocalArquivo diferença
+
+clear limpar comandos
+git shortlog nos dá um resumo do log do projeto
+
+
+Admin Repos, performance.
+
+Limpa arquivo untracked.(apaga)
+git clean -f
+
+(garbage collector) limpa arquivos não necessários para o projeto.
+otimiza o repositório.
+git gc 
+
+Checar a integridade dos arquivos
+git fsck (File system check)
+Verifica a intregridade de arquivos e sua conectividade
+Verificando possíveis currpções em arquivos. (Corrompido)
 
 
