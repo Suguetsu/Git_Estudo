@@ -67,6 +67,7 @@ git diff HEAD: NuvemArquivo x LocalArquivo diferença
 
 clear limpar comandos
 git shortlog nos dá um resumo do log do projeto
+git reflog: mais completo que o git log, mapea todas as ações anteriores
 
 
 Admin Repos, performance.
@@ -83,4 +84,23 @@ git fsck (File system check)
 Verifica a intregridade de arquivos e sua conectividade
 Verificando possíveis currpções em arquivos. (Corrompido)
 
+
+Backup Rápido do projeto, para compartilhamento.
+git archive --format zip --output master_files.zip master
+
+A importância do commit
+
+O problema: Commits sem sentido atrapalham o projeto;
+-Precisamos padronizar os commit, para que o projeto cresça de forma
+saudável também no versionamento, isso ajuga em:
+	Review do Pull Request;
+	Melhoria dos log em git log;
+	Manutenção do projeto (Voltar código, por exemplo);
+
+Há uma solução chamada private branches
+Onde criamos branches que não ser]ão compartilhadas no repositório, então
+podemos colocar qualquer commit 
+Ao fim da solução do problema podemos fazer um rebase;
+O comando será: git rebase<BranchAtual><BranchPrivado>-i
+Escolhemos os branches para excluir(squash) e renoimear com (reword)
 
