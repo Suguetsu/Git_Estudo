@@ -41,6 +41,7 @@ git tag checkout + tag, muda para a tag.
 Ultilizadas para demarcar estágios de desenvolvimento.
 
 git fetch -a, recebe todas as branchs.
+$ git commit --amend //  faz um commi antigo ir para frente
 
 
 Submódulos. 
