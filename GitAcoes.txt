@@ -20,6 +20,7 @@ cd + .. Volta para a pasta raiz do projeto.
 
 git mv => comando para renomear arquivo
 git rm => comando para remover arquivo
+rm -rf .git => exclui o arquivo de inicialização git
 git branch => visualiza as branchs ativas
 gti branch -d + <nomeBranch>  => Deleta a branch
 git checkout -b + <nomeNovaBranch> => Cria uma nova branch e muda pra ela.
